@@ -1,0 +1,73 @@
+* {
+    margin: 1%;
+    font-size: 18px;
+}
+
+canvas{
+    margin: 0 0;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 0% 4%;
+}
+
+.coordinate{
+    padding: 0px 5px;
+}
+
+body{
+    background-color:#5e939c;
+    text-align: center;     /*Наследуется всем*/
+    width: 98%;
+    display: table;
+    position: absolute;
+    /* background-size: cover; */
+
+}
+
+
+
+#author_name{
+    font-style: italic;
+    color: #dc7c48;
+    font-size: 25px;  /* каскадирование */
+}
+
+#container{
+    background-color: #046176;
+    border-radius: 30px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.radioBtn{
+    border-radius: 5px;
+    background-color: #5e939c;
+    padding: 0 1% 0 0;
+}
+
+#content > #xCoordinate{ /*селекторов дочерних элементов*/
+    margin:0% auto;
+}
+
+#xCoordinate *, #yCoordinate *, #rCoordinate *{ /* селектор потомств */
+    display: inline-flex;
+}
+
+table tr:nth-child(2n){  /* селектор потомств */ /*селектор псевдоклассов*/
+    background-color: #c4b59d;
+}
+table tr:nth-child(2n+1){  /* селектор потомств */ /*селектор псевдоклассов*/
+    background-color:#fccc8c;
+}
+
+
+
+#results  [success=true]{  /* селектор потомств */ /*селекторов идентификаторов*/
+    color: green;
+}
+#results  [success=false]{ /* селектор потомств */ /*селекторов идентификаторов*/
+    color: red;
+}
