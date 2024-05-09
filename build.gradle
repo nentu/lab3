@@ -14,7 +14,7 @@ wildfly {
     // Optional. Default value: null (unset).
     username = "nentu"
     // Optional. Default value: null (unset).
-    password = "Qwerty789@"
+    password = 
     // Required. Processed with "Project.file()" method.
     deployment = "build/libs/lab3-1.0-SNAPSHOT.war"
     // Optional. Default value: true.
